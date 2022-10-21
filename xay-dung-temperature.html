@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        doC;
+        constructor(doC) {
+            this.doC = doC;
+        }
+        getCtof() {
+            return this.doC * 1.8 + 32
+        }
+        getCtokenvin() {
+            return this.doC + 273.15
+        }
+    }
+    let nhietdo = new Temperature(25)
+    document.write("Nhiệt độ F là: " + nhietdo.getCtof() + "<br>" +
+    "Nhiệt độ Kenvin là: " + nhietdo.getCtokenvin())
+</script>
+</body>
+</html>
